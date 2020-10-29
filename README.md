@@ -32,7 +32,7 @@ php artisan vendor:publish --tag="httpclient"
 
 ## HOW TO USE
 
--   [Quick Usage](#Quick Usage)
+-   [Quick Usage](#quick)
 -   [Usage](#usage)
 -   [Credits](#credits)
 -   [License](#license)
