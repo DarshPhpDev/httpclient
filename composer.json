@@ -1,0 +1,34 @@
+{
+    "name": "darshphpdev/httpclient",
+    "description": "Simple Http Client Package For Laravel Framework Built on Top of Guzzle.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mustafa Ahmed",
+            "email": "mustafa.softcode@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "6.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "DarshPhpDev\\HttpHelper\\": "src/"
+        },
+        "files": [
+          "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DarshPhpDev\\HttpHelper\\HttpClientServiceProvider"
+            ],
+            "aliases": {
+                "HttpClient": "DarshPhpDev\\HttpHelper\\HttpClient"
+            }
+        }
+    }
+}
